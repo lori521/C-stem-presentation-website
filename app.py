@@ -22,10 +22,10 @@ st.subheader("📡 Live Sensor Data: Bridge Pillar 4")
 # Butoanele interactive pentru juriu
 col1, col2 = st.columns(2)
 with col1:
-    if st.button("🚨 Injectează Anomalie (Simulează Fisură)", type="primary"):
+    if st.button("🚨 Simulate Breach", type="primary"):
         st.session_state.fisura_activa = True
 with col2:
-    if st.button("🔄 Resetează Senzorii"):
+    if st.button("🔄 Reset Sensors"):
         st.session_state.fisura_activa = False
 
 # Generarea axei de timp
@@ -47,4 +47,4 @@ else:
     st.error("⚠️ CRITICAL ALERT: Micro-crack detected in Pillar 4! Structural rigidity compromised. AI predicts asymmetrical collapse in 47 days if unattended.")
     
     # Efect vizual de încărcare pentru simularea "AI-ului"
-    st.progress(100, text="Initiating Emergency Protocol & Digital Twin Simulation...")
+    st.progress(100, text="Initiating Emergency Protocol...")
